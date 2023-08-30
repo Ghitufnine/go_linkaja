@@ -10,6 +10,7 @@ import (
 )
 
 func setUpRoutes(app *fiber.App) {
+	//Routing
 	Account := app.Group("/account")
 
 	Account.Get("/:accountNumber", account.GetSaldo)
