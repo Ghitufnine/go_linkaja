@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "7def8e82-957e-409a-a94a-eafce81d075c",
+		"name": "LinkAja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13249325"
+	},
+	"item": [
+		{
+			"name": "[GET] Check Saldo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/account/555001",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"555001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to_account_number\": \"555001\",\r\n    \"amount\": 16000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/account/555002/transfer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"555002",
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
